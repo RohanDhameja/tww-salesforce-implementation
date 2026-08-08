@@ -1,0 +1,57 @@
+name: Deploy progress dashboard
+
+on:
+  push:
+    branches:
+      - main
+      - agent/progress-dashboard
+    paths:
+      - "apps/progress/**"
+      - ".github/workflows/progress-pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: progress-pages
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: apps/progress/package-lock.json
+
+      - name: Install dependencies
+        working-directory: apps/progress
+        run: npm ci
+
+      - name: Build static dashboard
+        working-directory: apps/progress
+        run: npm run build:pages
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: apps/progress/out
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
