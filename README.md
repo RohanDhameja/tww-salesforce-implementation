@@ -29,6 +29,7 @@ Do not commit authentication URLs, access tokens, passwords, personal data, prod
 ## Repository map
 
 - `docs/` — roadmap, decisions, security model, requirements, worklogs, and tests.
+- [`docs/architecture/data-model.md`](docs/architecture/data-model.md) — living object model, relationships, org findings, gaps, and decisions.
 - `apps/web/` — future React end-user application.
 - `packages/ui/` — future reusable design system.
 - `salesforce/force-app/` — Salesforce metadata after the baseline and retrieval plan are approved.
