@@ -1,0 +1,27 @@
+# Salesforce authentication and local state
+.sf/
+.sfdx/
+.localdevserver/
+
+# Node and build output
+node_modules/
+dist/
+build/
+.next/
+coverage/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Logs and OS files
+*.log
+.DS_Store
+
+# Sensitive or generated data
+data/
+exports/
+secrets/
+*.key
+*.pem
