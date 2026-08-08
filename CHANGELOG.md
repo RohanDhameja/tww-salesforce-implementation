@@ -13,6 +13,9 @@ All notable project, Salesforce, architecture, and delivery changes are recorded
 - Recorded UX-first and headless React architectural principles.
 - Documented the approved Salesforce role hierarchy.
 - Added a living data-model document covering the requirements, verified `twwdev` objects and functionality, proposed additions, conflicts, and canonical-model decisions.
+- Added a business-friendly Account review with relatable examples and recommended next steps.
+- Added an Account open-question register with 12 tracked business decisions, proposed owners, status, and implementation impact.
+- Linked Account validation work from the repository overview, data model, project status, and public progress dashboard.
 
 ### Changed in `twwdev`
 

@@ -10,6 +10,8 @@ test("static export contains the public progress dashboard", async () => {
   assert.match(html, /Done/);
   assert.match(html, /In progress/);
   assert.match(html, /Four deliberate phases/);
+  assert.match(html, /Account business validation/);
+  assert.match(html, /Review the open questions/);
   assert.match(html, /Role hierarchy aligned/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape|SkeletonPreview/);
 });

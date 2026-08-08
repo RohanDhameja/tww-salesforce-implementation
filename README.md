@@ -30,6 +30,8 @@ Do not commit authentication URLs, access tokens, passwords, personal data, prod
 
 - `docs/` — roadmap, decisions, security model, requirements, worklogs, and tests.
 - [`docs/architecture/data-model.md`](docs/architecture/data-model.md) — living object model, relationships, org findings, gaps, and decisions.
+- [`docs/requirements/account-review.md`](docs/requirements/account-review.md) — business-friendly Account observations, examples, and recommendations.
+- [`docs/decisions/account-open-questions.md`](docs/decisions/account-open-questions.md) — tracked Account questions, owners, status, and final decisions.
 - `apps/web/` — future React end-user application.
 - `packages/ui/` — future reusable design system.
 - `salesforce/force-app/` — Salesforce metadata after the baseline and retrieval plan are approved.
@@ -46,6 +48,8 @@ Do not commit authentication URLs, access tokens, passwords, personal data, prod
 ## Current status
 
 - Role hierarchy reviewed and corrected in `twwdev`.
+- Account configuration, data patterns, duplicate controls, field security, and user experience reviewed read-only.
+- Account business questions are open for validation before normalization begins.
 - Security normalization and 10-license allocation remain in planning.
 - Headless React and existing-site architecture require a current-state assessment.
 - No Salesforce metadata has been retrieved into this repository yet.
