@@ -327,4 +327,4 @@ Do not record access tokens, authentication URLs, real donor or beneficiary data
 | Date | Change | Evidence | Pull request |
 |---|---|---|---|
 | 2026-08-08 | Created the living data model from the source workbooks and a read-only `twwdev` audit. | Object schema, record types, Apex, triggers, LWCs, flows, approval process, validation rules, reports, and dashboards | [PR #2](https://github.com/RohanDhameja/tww-salesforce-implementation/pull/2) |
-| 2026-08-08 | Added the focused Account review and linked business open questions. | Read-only Account fields, record types, aggregate data patterns, validation, duplicate controls, automation, permissions, layouts, and Lightning page review | Pending |
+| 2026-08-08 | Added the focused Account review and linked business open questions. | Read-only Account fields, record types, aggregate data patterns, validation, duplicate controls, automation, permissions, layouts, and Lightning page review | [PR #3](https://github.com/RohanDhameja/tww-salesforce-implementation/pull/3) |
