@@ -318,4 +318,4 @@ Do not record access tokens, authentication URLs, real donor or beneficiary data
 
 | Date | Change | Evidence | Pull request |
 |---|---|---|---|
-| 2026-08-08 | Created the living data model from the source workbooks and a read-only `twwdev` audit. | Object schema, record types, Apex, triggers, LWCs, flows, approval process, validation rules, reports, and dashboards | To be added |
+| 2026-08-08 | Created the living data model from the source workbooks and a read-only `twwdev` audit. | Object schema, record types, Apex, triggers, LWCs, flows, approval process, validation rules, reports, and dashboards | [PR #2](https://github.com/RohanDhameja/tww-salesforce-implementation/pull/2) |
