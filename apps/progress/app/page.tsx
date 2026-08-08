@@ -27,6 +27,10 @@ const completed = [
     title: "Experience principles agreed",
     detail: "UX-first, accessible, mobile-ready, and headless React where it adds real value.",
   },
+  {
+    title: "Account model reviewed",
+    detail: "Account categories, overlapping fields, duplicate controls, PAN access, automation, and current screens were reviewed read-only.",
+  },
 ];
 
 const inProgress = [
@@ -54,6 +58,11 @@ const inProgress = [
     title: "Backlog cleanup",
     detail: "Normalizing personas, incomplete stories, open comments, scope, and acceptance criteria.",
     label: "Planning",
+  },
+  {
+    title: "Account business validation",
+    detail: "Twelve open questions now track categories, status, commitments, email, PAN, duplicates, ownership, and user screens.",
+    label: "Account",
   },
 ];
 
@@ -93,6 +102,7 @@ const phases = [
 ];
 
 const decisions = [
+  "Account categories, status, commitments, email, PAN, duplicate handling, ownership, and user screens",
   "Named allocation of the 10 internal Salesforce licenses",
   "PAN, bank-detail, anonymous-donor, and beneficiary data policy",
   "React, Salesforce-native, identity, API, and hosting boundaries",
@@ -265,11 +275,11 @@ export default function Home() {
               are explicit and approved.
             </p>
             <a
-              href="https://github.com/RohanDhameja/tww-salesforce-implementation/tree/main/docs"
+              href="https://github.com/RohanDhameja/tww-salesforce-implementation/blob/main/docs/decisions/account-open-questions.md"
               target="_blank"
               rel="noreferrer"
             >
-              Read the project record <span aria-hidden="true">↗</span>
+              Review the open questions <span aria-hidden="true">↗</span>
             </a>
           </div>
           <ol className="decision-list">

@@ -40,6 +40,8 @@ The baseline review used:
 - `User_Stories_Manually_Edited.xlsx`; and
 - a read-only metadata, schema, automation, UI, report, and dashboard audit of `twwdev` on 2026-08-08.
 
+A focused read-only Account review is documented in [`account-review.md`](../requirements/account-review.md). Questions that require business approval are tracked in the [`Account open-question register`](../decisions/account-open-questions.md).
+
 The workbooks are source inputs, not automatically authoritative configuration. Conflicts are recorded here and resolved through a decision record.
 
 ## Executive model recommendation
@@ -271,6 +273,10 @@ Both `Bank_Master__c` and `Bank_Information__c` exist. Their fields, users, and 
 
 The security story requests encryption for PAN and bank details, while the change request asks for PAN to be read-only for most users and editable for administrators. Current PAN fields are not consistently encrypted. Field visibility alone is not encryption.
 
+### Account field and classification overlap
+
+The focused Account review found overlapping status, monthly-commitment, email, PAN, and donor-classification concepts. The current data also shows that Account Category and Donor Type do not always agree. Do not remove or migrate these fields until the linked business questions are approved.
+
 ### Scheduled automation gap
 
 Monthly commitment and financial scheduler classes exist, but current TWW schedules were not found. Confirm timing, recipients, volume, idempotency, and monitoring before scheduling them.
@@ -289,6 +295,8 @@ Monthly commitment and financial scheduler classes exist, but current TWW schedu
 | DM-008 | PAN protection | Resolve encryption versus field-access requirement | Pending approval |
 
 When a decision is approved, create `docs/decisions/DM-###-short-name.md`, update this table, and update the relevant object rows and diagrams.
+
+Account-level business questions AQ-001 through AQ-012 are maintained separately in [`docs/decisions/account-open-questions.md`](../decisions/account-open-questions.md). Their approved answers will feed the relevant architecture decision records.
 
 ## Planned implementation sequence
 
@@ -319,3 +327,4 @@ Do not record access tokens, authentication URLs, real donor or beneficiary data
 | Date | Change | Evidence | Pull request |
 |---|---|---|---|
 | 2026-08-08 | Created the living data model from the source workbooks and a read-only `twwdev` audit. | Object schema, record types, Apex, triggers, LWCs, flows, approval process, validation rules, reports, and dashboards | [PR #2](https://github.com/RohanDhameja/tww-salesforce-implementation/pull/2) |
+| 2026-08-08 | Added the focused Account review and linked business open questions. | Read-only Account fields, record types, aggregate data patterns, validation, duplicate controls, automation, permissions, layouts, and Lightning page review | Pending |
