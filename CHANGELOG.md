@@ -12,6 +12,7 @@ All notable project, Salesforce, architecture, and delivery changes are recorded
 - Recorded the 10-internal-license constraint.
 - Recorded UX-first and headless React architectural principles.
 - Documented the approved Salesforce role hierarchy.
+- Added a living data-model document covering the requirements, verified `twwdev` objects and functionality, proposed additions, conflicts, and canonical-model decisions.
 
 ### Changed in `twwdev`
 

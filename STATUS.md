@@ -13,6 +13,8 @@ Status: **In progress**
 - Reviewed the role hierarchy, CRUD matrix, user stories, license list, and change requests.
 - Confirmed the 10-internal-license constraint.
 - Verified the approved eight-role hierarchy.
+- Audited the `twwdev` data model and existing automation, Apex, Lightning components, reports, and dashboards.
+- Created a living data-model document with current relationships, proposed additions, conflicts, and pending decisions.
 - Established the implementation repository, roadmap, worklogs, and decision templates.
 - Agreed on UX-first and headless React principles.
 
@@ -20,7 +22,7 @@ Status: **In progress**
 
 - Security-model normalization
 - Named allocation of the 10 internal licenses
-- Current-state Salesforce baseline
+- Salesforce metadata retrieval and repository baseline
 - Existing website and headless architecture assessment
 - User-story and acceptance-criteria normalization
 
