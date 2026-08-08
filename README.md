@@ -1,6 +1,12 @@
 # Together We Will Salesforce Implementation
 
-This private repository is the source of truth for planning, building, securing, testing, and releasing the Together We Will Foundation Salesforce solution and its end-user web experiences.
+This public repository is the source of truth for planning, building, securing, testing, and releasing the Together We Will Foundation Salesforce solution and its end-user web experiences.
+
+## Public progress dashboard
+
+**[View the Together We Will implementation progress dashboard](https://rohandhameja.github.io/tww-salesforce-implementation/)**
+
+The dashboard presents completed work, active work, project phases, decision gates, and the latest verified activity. The concise repository status is also available in [`STATUS.md`](STATUS.md).
 
 ## Guiding principles
 

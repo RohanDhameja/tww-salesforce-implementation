@@ -7,6 +7,8 @@ All notable project, Salesforce, architecture, and delivery changes are recorded
 ### Added
 
 - Established the project repository and documentation structure.
+- Added a public progress dashboard with Done, In Progress, Phases, Decisions, and latest verified activity views.
+- Added a root-level project status summary and automated GitHub Pages publishing.
 - Recorded the 10-internal-license constraint.
 - Recorded UX-first and headless React architectural principles.
 - Documented the approved Salesforce role hierarchy.
