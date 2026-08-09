@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Together We Will — Implementation Progress",
@@ -306,6 +307,12 @@ export default function Home() {
         </div>
 
         <div className="artifact-grid">
+          <Link className="artifact-card prototype-artifact" href="/prototype">
+            <span className="artifact-status">Clickable prototype</span>
+            <h3>Explore the proposed TWW application</h3>
+            <p>Switch user roles, search for people, review duplicate prevention, and explore Rahul Sharma’s combined Account experience.</p>
+            <strong>Open the prototype <span aria-hidden="true">→</span></strong>
+          </Link>
           <a
             className="artifact-card"
             href="https://github.com/RohanDhameja/tww-salesforce-implementation/blob/main/docs/ux/interface-design-brief.md"

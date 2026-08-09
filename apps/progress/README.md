@@ -14,6 +14,7 @@ The public progress landing page for the Together We Will Salesforce implementat
 - Phase 0–3 delivery roadmap
 - Decisions required before Phase 1
 - Latest verified Salesforce activity
+- A clickable, mock-data UX prototype for structured business review
 
 The dashboard deliberately avoids invented completion percentages. Update its status only when the corresponding repository documentation or worklog provides evidence.
 
@@ -25,3 +26,5 @@ The dashboard deliberately avoids invented completion percentages. Update its st
 - `node --test tests/rendered-html.test.mjs` — validate rendered dashboard content
 
 GitHub Actions publishes the static export when dashboard changes reach `main` or the active progress-dashboard branch.
+
+The prototype is a design-validation experience only. It does not connect to Salesforce or replace existing functionality.
