@@ -64,6 +64,11 @@ const inProgress = [
     detail: "Twelve open questions now track categories, status, commitments, email, PAN, duplicates, ownership, and user screens.",
     label: "Account",
   },
+  {
+    title: "Application interface design",
+    detail: "A business-friendly interface brief and low-fidelity application and Account wireframes are ready for review.",
+    label: "UX design",
+  },
 ];
 
 const phases = [
@@ -124,6 +129,7 @@ export default function Home() {
           <a href="#now">Now</a>
           <a href="#phases">Phases</a>
           <a href="#decisions">Decisions</a>
+          <a href="#latest">Latest</a>
           <a
             className="nav-cta"
             href="https://github.com/RohanDhameja/tww-salesforce-implementation"
@@ -293,9 +299,40 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="latest-section">
+      <section className="latest-section" id="latest">
         <div className="section-intro compact-intro">
-          <div><p className="section-kicker">Latest verified activity</p><h2>Role hierarchy aligned.</h2></div>
+          <div><p className="section-kicker">Latest project activity</p><h2>Interface design is underway.</h2></div>
+          <p>Two Phase 0 design documents are ready for structured review. No Salesforce functionality has been changed.</p>
+        </div>
+
+        <div className="artifact-grid">
+          <a
+            className="artifact-card"
+            href="https://github.com/RohanDhameja/tww-salesforce-implementation/blob/main/docs/ux/interface-design-brief.md"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span className="artifact-status">Draft for review</span>
+            <h3>Application interface design brief</h3>
+            <p>Users, priority journeys, navigation, Account experience, design principles, boundaries, and review sequence.</p>
+            <strong>Read the brief <span aria-hidden="true">↗</span></strong>
+          </a>
+          <a
+            className="artifact-card"
+            href="https://github.com/RohanDhameja/tww-salesforce-implementation/blob/main/docs/ux/wireframes.md"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span className="artifact-status">Low-fidelity draft</span>
+            <h3>Application and Account wireframes</h3>
+            <p>Proposed application shell, role-based home, search, duplicate warning, Account overview, and relationship screens.</p>
+            <strong>Review the wireframes <span aria-hidden="true">↗</span></strong>
+          </a>
+        </div>
+
+        <div className="previous-milestone">
+          <p className="section-kicker">Previously verified foundation</p>
+          <h3>Role hierarchy aligned.</h3>
           <p>Recorded August 8, 2026 in the `twwdev` development sandbox.</p>
         </div>
         <div className="hierarchy-card">

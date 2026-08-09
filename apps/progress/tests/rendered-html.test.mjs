@@ -12,6 +12,11 @@ test("static export contains the public progress dashboard", async () => {
   assert.match(html, /Four deliberate phases/);
   assert.match(html, /Account business validation/);
   assert.match(html, /Review the open questions/);
+  assert.match(html, /Interface design is underway/);
+  assert.match(html, /Application interface design brief/);
+  assert.match(html, /Application and Account wireframes/);
+  assert.match(html, /docs\/ux\/interface-design-brief\.md/);
+  assert.match(html, /docs\/ux\/wireframes\.md/);
   assert.match(html, /Role hierarchy aligned/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape|SkeletonPreview/);
 });
