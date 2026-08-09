@@ -4,6 +4,7 @@
 - **Phase:** Phase 0 — Foundation
 - **Last updated:** 2026-08-08
 - **Design brief:** [`interface-design-brief.md`](interface-design-brief.md)
+- **Clickable prototype:** [Open the mock-data experience](https://rohandhameja.github.io/tww-salesforce-implementation/prototype/)
 
 ## How to read this document
 

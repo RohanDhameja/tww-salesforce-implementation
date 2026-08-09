@@ -226,13 +226,14 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .latest-section { padding-top: 80px; }
 .compact-intro { margin-bottom: 40px; }
 .compact-intro h2 { font-size: clamp(38px, 4vw, 56px); }
-.artifact-grid { max-width: 1180px; margin: 0 auto 72px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+.artifact-grid { max-width: 1180px; margin: 0 auto 72px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
 .artifact-card { min-height: 290px; padding: 34px; display: flex; flex-direction: column; align-items: flex-start; border: 1px solid var(--line); border-radius: 24px; background: var(--white); box-shadow: 0 18px 55px rgba(19,34,56,.06); transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease; }
 .artifact-card:hover { transform: translateY(-3px); border-color: rgba(230,106,78,.45); box-shadow: 0 24px 65px rgba(19,34,56,.11); }
 .artifact-status { padding: 7px 10px; border-radius: 999px; background: var(--coral-soft); color: var(--coral); font-size: 8px; font-weight: 850; text-transform: uppercase; letter-spacing: .12em; }
 .artifact-card h3 { margin: 25px 0 12px; color: var(--navy-900); font: 500 28px/1.1 Georgia, serif; }
 .artifact-card p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.7; }
 .artifact-card strong { margin-top: auto; padding-top: 28px; color: var(--coral); font-size: 12px; }
+.prototype-artifact { border-color: rgba(230,106,78,.45); background: linear-gradient(150deg, var(--white), var(--coral-soft)); }
 .previous-milestone { max-width: 1000px; margin: 0 auto 30px; }
 .previous-milestone .section-kicker { margin-bottom: 10px; }
 .previous-milestone h3 { margin: 0; color: var(--navy-900); font: 500 34px/1.1 Georgia, serif; }
